@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table and Div Example</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        table {
+    width: 50%;
+    border-collapse: collapse; /* Collapses borders */
+}
+
+th, td {
+    border: 1px solid black;
+    padding: 10px;
+}
+
+.grid-container {
+    display: grid; /* Grid layout */
+    grid-template-columns: repeat(3, 1fr); /* Three equal columns */
+    gap: 10px; /* Space between items */
+    margin-top: 20px;
+}
+
+.grid-item {
+    background-color: lightgrey;
+    padding: 20px;
+    text-align: center;
+}
+
+    </style>
+</head>
+<body>
+
+    <h1>Table Example</h1>
+    <table>
+        <tr>
+            <th>Item</th>
+            <th>Price</th>
+        </tr>
+        <tr>
+            <td>Apple</td>
+            <td>$1</td>
+        </tr>
+        <tr>
+            <td>Banana</td>
+            <td>$0.50</td>
+        </tr>
+    </table>
+
+    <h1>Div Layout Example</h1>
+    <div class="grid-container">
+        <div class="grid-item">Box 1</div>
+        <div class="grid-item">Box 2</div>
+        <div class="grid-item">Box 3</div>
+    </div>
+
+</body>
+</html>

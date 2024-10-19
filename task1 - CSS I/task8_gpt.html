@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Colors and Backgrounds Example</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+    margin: 0;
+    padding: 20px;
+}
+
+.solid-color {
+    background-color: #3498db; /* HEX */
+    color: white;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.gradient-background {
+    background: linear-gradient(to right, rgb(255, 0, 150), rgb(0, 204, 255)); /* RGB */
+    color: white;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.image-background {
+    background-image: url('background.jpg'); /* Image URL */
+    color: white;
+    padding: 20px;
+    height: 150px;
+    background-size: cover; /* Cover the entire area */
+    margin-bottom: 20px;
+}
+
+    </style>
+</head>
+<body>
+
+    <div class="solid-color">Solid Color Background</div>
+    <div class="gradient-background">Gradient Background</div>
+    <div class="image-background">Image Background</div>
+
+</body>
+</html>

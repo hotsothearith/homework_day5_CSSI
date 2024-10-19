@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Variables Example</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        :root {
+    --main-color: #3498db; /* Define a CSS variable */
+    --padding: 20px; /* Padding variable */
+}
+
+.box {
+    background-color: var(--main-color); /* Use variable */
+    padding: var(--padding); /* Use variable */
+    margin: 20px;
+    color: white;
+    text-align: center;
+}
+
+/* Change variable value for demonstration */
+.box:nth-child(2) {
+    --main-color: #e74c3c; /* Change color for the second box */
+}
+
+    </style>
+</head>
+<body>
+
+    <div class="box">Box with CSS Variables</div>
+    <div class="box">Another Box</div>
+
+</body>
+</html>

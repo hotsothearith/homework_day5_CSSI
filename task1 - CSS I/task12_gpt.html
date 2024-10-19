@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox Example</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .flex-container {
+    display: flex; /* Enables flexbox */
+    justify-content: space-between; /* Distributes space between items */
+    align-items: center; /* Vertically centers items */
+    flex-direction: row; /* Arranges items in a row */
+    height: 100px; /* Fixed height for demonstration */
+}
+
+.flex-item {
+    background-color: lightblue;
+    padding: 20px;
+    margin: 5px;
+    flex: 1; /* Allows items to grow equally */
+}
+
+    </style>
+</head>
+<body>
+
+    <div class="flex-container">
+        <div class="flex-item">Item 1</div>
+        <div class="flex-item">Item 2</div>
+        <div class="flex-item">Item 3</div>
+    </div>
+
+</body>
+</html>

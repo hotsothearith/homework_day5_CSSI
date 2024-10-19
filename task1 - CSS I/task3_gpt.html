@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Selectors Example</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Element Selector */
+h1 {
+    color: navy; /* Color all h1 elements navy */
+}
+
+/* Class Selector */
+.main-title {
+    font-size: 2em; /* Make the font size of the class 'main-title' larger */
+}
+
+.highlight {
+    background-color: yellow; /* Highlight the background of all paragraphs with class 'highlight' */
+}
+
+/* ID Selector */
+#intro {
+    font-style: italic; /* Italicize the text of the paragraph with ID 'intro' */
+}
+
+/* Attribute Selector */
+a[target="_blank"] {
+    color: green; /* Color links that open in a new tab green */
+}
+
+/* Pseudo-class Selector */
+a.link:hover {
+    text-decoration: underline; /* Underline links when hovered */
+}
+
+    </style>
+</head>
+<body>
+
+    <h1 class="main-title">Welcome to CSS Selectors</h1> <!-- Class Selector -->
+    <p id="intro">This document demonstrates various CSS selectors.</p> <!-- ID Selector -->
+    
+    <p class="highlight">Highlight this paragraph!</p> <!-- Class Selector -->
+    <p class="highlight">Another highlighted paragraph!</p> <!-- Class Selector -->
+    
+    <a href="#" class="link">Click me</a> <!-- Class Selector -->
+    <a href="#" class="link" target="_blank">Open in a new tab</a> <!-- Attribute Selector -->
+    
+    <ul>
+        <li class="item">List Item 1</li>
+        <li class="item">List Item 2</li>
+        <li class="item">List Item 3</li>
+    </ul>
+
+</body>
+</html>
+

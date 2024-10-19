@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alignment and Display Example</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .text-align p {
+    margin: 10px 0;
+}
+
+.center {
+    text-align: center;
+}
+
+.right {
+    text-align: right;
+}
+
+.flex-container {
+    display: flex; /* Use Flexbox */
+    justify-content: space-around; /* Align items */
+    margin-top: 20px;
+}
+
+.flex-item {
+    padding: 20px;
+    border: 1px solid #ccc;
+}
+
+    </style>
+</head>
+<body>
+
+    <h1>Text Alignment</h1>
+    <div class="text-align">
+        <p>Left aligned text</p>
+        <p class="center">Centered text</p>
+        <p class="right">Right aligned text</p>
+    </div>
+
+    <div class="flex-container">
+        <div class="flex-item">Item 1</div>
+        <div class="flex-item">Item 2</div>
+        <div class="flex-item">Item 3</div>
+    </div>
+
+</body>
+</html>
